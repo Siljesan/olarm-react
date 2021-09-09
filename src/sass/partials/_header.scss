@@ -6,13 +6,18 @@
   height: 100vh;
 }
 .navLinks {
-  font-family: $font-headings;
+  font-family: $font-nav;
 }
-.active {
-  color: $primary-color;
+.navLinks--active {
+  color: $primary-color !important;
+  border-bottom: solid 1px $secondary-color !important;
+  width: 25px;
+  align-items: center;
 }
 .me-auto {
   margin: auto;
+  justify-content: space-evenly;
+  width: 50%;
 }
 .link {
   color: $link-color;
@@ -20,4 +25,50 @@
 .navCta {
   border: solid 1px white;
   border-radius: 50px;
+  width: 100px;
+  text-align: center;
+}
+
+.links {
+  font-weight: 700;
+  color: $primary-color !important;
+}
+
+.headingActive {
+  color: $secondary-color;
+}
+.heading {
+  color: $primary-color;
+  font-size: 70px;
+  width: 50%;
+  font-weight: 700;
+}
+.supportText {
+  color: $primary-color;
+  width: 50%;
+  font-size: 20px;
+}
+.textCont {
+  font-family: $font-nav;
+  margin-top: 200px;
+}
+.ctaBtn {
+  color: $secondary-color;
+  border: solid 1px $secondary-color;
+  border-radius: 50px;
+  margin-top: 20px;
+  padding: 15px 45px;
+  letter-spacing: 3px;
+  background-color: rgba(255, 92, 99, 0.16);
+  @include innershadow(rgba(255, 92, 99, 0.2));
+  @include outershadow(rgba(255, 92, 99, 0.1));
+}
+
+.icons {
+  color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+}
+.fab {
+  padding: 20px;
 }

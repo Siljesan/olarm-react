@@ -1,0 +1,7 @@
+@mixin innershadow($shadow) {
+  box-shadow: inset 0px 0px 15px 5px $shadow;
+}
+
+@mixin outershadow($shadow) {
+  box-shadow: 5px 5px 15px 5px $shadow;
+}
